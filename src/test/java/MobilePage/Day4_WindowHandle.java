@@ -28,9 +28,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Day4_WindowHandle {
 	WebDriver driver;
   //@Test
-  public void CompareProducts() {
+  public void CompareProducts() throws InterruptedException {
 	  driver.findElement(By.xpath("//*[contains(text(),'Mobile')]")).click();
 	  driver.findElement(By.xpath("//html/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[2]/div/div[3]/ul/li[2]/a")).click();
+	  Thread.sleep(3000);
 	  driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[2]/div/div[3]/ul/li[2]/a")).click();
 	  driver.findElement(By.xpath("//button[@title='Compare']/span")).click();
 	  Set <String> handles = driver.getWindowHandles();
@@ -60,6 +61,7 @@ public class Day4_WindowHandle {
 	  driver.close();
   }
   
+  //Original Script
   @Test
   public void testTestCase4() throws Exception {
 	
@@ -71,11 +73,12 @@ public class Day4_WindowHandle {
     // 3. In mobile products list , click on Add To Compare for 2 mobiles (Iphone & Sony Xperia)
     
     //note: store the title of the 2 mobiles for comparison for verification later when popup page comes up
-    driver.findElement(By.xpath("//*[@id='top']/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[1]/div/div[3]/ul/li[2]/a")).click();
+    driver.findElement(By.xpath(" /html/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[3]/div/div[3]/ul/li[2]/a")).click();
     String mainMobile1 = driver.findElement(By.xpath("//h2/a[@title='IPhone']")).getText();  // text captured - upperCase "IPHONE"
     System.out.println("mainMobile1 = "+mainMobile1);
-  
-    driver.findElement(By.xpath("//*[@id='top']/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[3]/div/div[3]/ul/li[2]/a")).click();   
+   
+    driver.findElement(By.xpath("/html/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[2]/div/div[3]/ul/li[2]/a")).click(); 
+    
    String mainMobile2 = driver.findElement(By.xpath("//h2/a[@title='Sony Xperia']")).getText();  // text captured - upperCase "SONY XPERIA"
     System.out.println("mainMobile2 = "+mainMobile2);
 
