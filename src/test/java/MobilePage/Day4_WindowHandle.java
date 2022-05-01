@@ -61,7 +61,7 @@ public class Day4_WindowHandle {
 	  driver.close();
   }
   
-  //Original Script
+  //Original Script - updated the xpath value
   @Test
   public void testTestCase4() throws Exception {
 	
