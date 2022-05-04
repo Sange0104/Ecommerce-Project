@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-01T19:17:54 EDT" name="Default suite" finished-at="2022-05-01T19:18:11 EDT" duration-ms="16068">
+  <suite started-at="2022-05-03T20:23:06 EDT" name="Default suite" finished-at="2022-05-03T20:24:03 EDT" duration-ms="56044">
     <groups>
     </groups>
-    <test started-at="2022-05-01T19:17:54 EDT" name="Default test" finished-at="2022-05-01T19:18:11 EDT" duration-ms="16068">
-      <class name="MobilePage.Day4_WindowHandle">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:MobilePage.Day4_WindowHandle@6379eb]" started-at="2022-05-01T19:17:54 EDT" name="beforeTest" finished-at="2022-05-01T19:18:03 EDT" duration-ms="8308" status="PASS">
+    <test started-at="2022-05-03T20:23:06 EDT" name="Default test" finished-at="2022-05-03T20:24:03 EDT" duration-ms="56044">
+      <class name="MobilePage.Day8_ReOrder">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:MobilePage.Day8_ReOrder@79924b]" started-at="2022-05-03T20:23:06 EDT" name="beforeTest" finished-at="2022-05-03T20:23:28 EDT" duration-ms="21181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="testTestCase4()[pri:0, instance:MobilePage.Day4_WindowHandle@6379eb]" started-at="2022-05-01T19:18:03 EDT" name="testTestCase4" finished-at="2022-05-01T19:18:08 EDT" duration-ms="5156" status="PASS">
+        <test-method signature="Reorder()[pri:0, instance:MobilePage.Day8_ReOrder@79924b]" started-at="2022-05-03T20:23:28 EDT" name="Reorder" finished-at="2022-05-03T20:24:01 EDT" duration-ms="32978" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTestCase4 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:MobilePage.Day4_WindowHandle@6379eb]" started-at="2022-05-01T19:18:08 EDT" name="afterTest" finished-at="2022-05-01T19:18:11 EDT" duration-ms="2572" status="PASS">
+        </test-method> <!-- Reorder -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:MobilePage.Day8_ReOrder@79924b]" started-at="2022-05-03T20:24:01 EDT" name="afterTest" finished-at="2022-05-03T20:24:03 EDT" duration-ms="1527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- MobilePage.Day4_WindowHandle -->
+      </class> <!-- MobilePage.Day8_ReOrder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
