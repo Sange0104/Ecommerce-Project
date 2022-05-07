@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MobilePage.Day8_ReOrder">
+      <class name="MobilePage.Day9_Discount">
         <methods>
-          <include name="Reorder"/>
-          <include name="afterTest"/>
           <include name="beforeTest"/>
+          <include name="DiscountTest"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- MobilePage.Day8_ReOrder -->
+      </class> <!-- MobilePage.Day9_Discount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

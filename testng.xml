@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1" >
+  <test name="EcommerceSite" >
+    <classes>
+       <class name="MobilePage.Day1_Sort" />
+       <class name="MobilePage.Day2_VerifyEqual" />
+       <class name="MobilePage.Day3_VerifyCart" />
+       <class name="MobilePage.Day4_WindowHandle" />
+       <class name="MobilePage.Day5_CreateAccount" />
+       <class name="MobilePage.Day6_PurchaseProducts" />
+       <class name="MobilePage.Day7_VerifyOrder" />
+       <class name="MobilePage.Day8_ReOrder" />
+       <class name="MobilePage.Day9_Discount" />
+          
+       
+    </classes>
+  </test>
+</suite>

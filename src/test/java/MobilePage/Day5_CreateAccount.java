@@ -29,8 +29,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Day5_CreateAccount {
 	WebDriver driver;
-	String lastname = "USER2";
-	  String firstname = "TEST2";
+	String lastname = "USER3";
+	  String firstname = "TEST3";
   @Test
   public void CreateAccount() {
 	  driver.findElement(By.xpath("//*[@id='header']/div/div[2]/div/a")).click();
@@ -48,8 +48,8 @@ public class Day5_CreateAccount {
 	  driver.findElement(By.xpath("//a[@title='Create an Account']/span")).click();
 	  driver.findElement(By.id("firstname")).sendKeys(firstname);
 	  driver.findElement(By.id("lastname")).sendKeys(lastname);
-	  driver.findElement(By.id("password")).sendKeys("testuser2");
-	  driver.findElement(By.id("confirmation")).sendKeys("testuser2");
+	  driver.findElement(By.id("password")).sendKeys("testuser3");
+	  driver.findElement(By.id("confirmation")).sendKeys("testuser3");
 	
 	  /*String Expectmsg ="This is a required field.";
 	  WebElement msg = driver.findElement(By.xpath("//*[@id=\'advice-required-entry-email_address\']"));
@@ -85,7 +85,7 @@ public class Day5_CreateAccount {
 	  driver.findElement(By.xpath("//a[@class='link-wishlist']")).click();
 	  driver.findElement(By.xpath("//button[@title='Share Wishlist']/span")).click();
 	  driver.findElement(By.id("email_address")).clear();
-	  driver.findElement(By.id("email_address")).sendKeys("Testuser2@email.com");
+	  driver.findElement(By.id("email_address")).sendKeys("Testuser3@email.com");
 	  driver.findElement(By.xpath("//button[@title='Share Wishlist']/span")).click();
 	  
 	  String vWishList = "Your Wishlist has been shared.";
